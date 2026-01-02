@@ -1,5 +1,15 @@
 function ColorMeImpressed()
-  local colors = { "cyberdream", "rose-pine", "rose-pine-main", "rose-pine-moon", "rose-pine-dawn" }
+  local colors = {
+    "cyberdream",
+    "rose-pine",
+    "rose-pine-main",
+    "rose-pine-moon",
+    "rose-pine-dawn",
+    "one_monokai",
+    "ashen",
+    "dark_flat",
+    "adwaita",
+  }
 
   math.randomseed(os.time())
   local color = colors[math.random(1, #colors)]
@@ -35,6 +45,20 @@ return {
   },
   {
     "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "cpea2506/one_monokai.nvim",
+  },
+  {
+    "ficcdaf/ashen.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  { "sekke276/dark_flat.nvim" },
+  {
+    "Mofiqul/adwaita.nvim",
     lazy = false,
     priority = 1000,
   },
