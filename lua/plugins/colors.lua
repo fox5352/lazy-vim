@@ -1,7 +1,6 @@
 function ColorMeImpressed()
   local colors = {
     "cyberdream",
-    "rose-pine",
     "rose-pine-main",
     "rose-pine-moon",
     "rose-pine-dawn",
@@ -18,6 +17,10 @@ function ColorMeImpressed()
 
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
   vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
+function ColorMeAnything()
+  vim.cmd.colorscheme("dark_flat")
 end
 
 return {
@@ -86,7 +89,7 @@ return {
         ColorMeImpressed()
       end, { desc = "select a random color in the list" })
 
-      ColorMeImpressed()
+      ColorMeAnything()
     end,
   },
 }
